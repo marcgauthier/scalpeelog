@@ -33,8 +33,8 @@ func Info(Msg string) {
 	send(Msg, constInfo)
 }
 
-func Error(Msg string) {
-	send(Msg, constError)
+func Error(msg error) {
+	send(msg.Error(), constError)
 
 }
 
