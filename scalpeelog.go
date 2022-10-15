@@ -38,6 +38,10 @@ func Error(msg error) {
 
 }
 
+func Fatal(msg error) {
+	send(msg.Error(), constError)
+
+}
 func Warning(Msg string) {
 	send(Msg, constWarning)
 
